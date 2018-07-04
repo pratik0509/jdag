@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  .row.align-items-center.justify-content-center
+    block content
+      .d-flex.flex-column.align-items-center.align-self-center
+        form(method='POST', enctype='multipart/form-data', action='/json/upload')
+          input(type='file', name='json_file')
+          input(type='submit', name='upload', value='Upload!')
