@@ -1,3 +1,17 @@
 .pad-inc {
     padding: 0.7em;
 }
+
+#particles-js {
+    background-color: #b61924;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    position: relative;
+    top: 8em;
+    left: 1%;
+}

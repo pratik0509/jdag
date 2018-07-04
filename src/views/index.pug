@@ -1,9 +1,20 @@
 extends layout
 
 block content
-  .row.align-items-center.justify-content-center
-    block content
-      .d-flex.flex-column.align-items-center.align-self-center
-        form(method='POST', enctype='multipart/form-data', action='/json/upload')
-          input(type='file', name='json_file')
-          input(type='submit', name='upload', value='Upload!')
+  .container.center.valign
+    div.row
+      div.col.s12.m8.offset-m2
+        div.card.blue-grey.darken-1
+          div.card-content.white-text
+            span.card-title Upload Flowpix generated files to see the DAG!
+          div.card-action
+            form(method='POST', enctype='multipart/form-data', action='/json/upload')
+              div(class='file-field input-field')
+                div(class='btn')
+                  span File
+                  input(type='file', name='json_file', class='validate', required='')
+                div(class='file-path-wrapper')
+                  input(class='file-path validate' type='text', class='validate', required='')
+              br
+              br
+              button.btn.waves-effect.waves-light(type='Submit', name='upload') Upload
