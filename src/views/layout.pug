@@ -15,3 +15,8 @@ html
   script(src='/materialize/js/materialize.min.js')
   script(src='/js/particles.min.js')
   script(src='/js/index.js')
+  if (data)
+    script(src='/js/sigma.min.js')
+    script(src='/js/sigma.parsers.json.min.js')
+    script(src='/js/dag.js')
+    script console.log('#{data}'); renderGraph('#{data}');

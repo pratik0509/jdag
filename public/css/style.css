@@ -15,3 +15,10 @@
     top: 8em;
     left: 1%;
 }
+
+#graph-container {
+    width: 30em;
+    height: 30em;
+    padding: 0.5%;
+    border: 0.5%;
+}
