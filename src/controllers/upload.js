@@ -1,5 +1,3 @@
-import Data from "../models/data";
-
 export default function(req, res) {
-    res.send("Uploaded successfully!");
+    res.redirect("/dag/" + req.file.filename);
 }
